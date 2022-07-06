@@ -8,7 +8,7 @@ rx8025是一个拥有I2C接口和温度补偿功能的新型实时时钟芯片�
 &emsp;**本库可以与RX8025以与芯片进行I2C通讯的形式设定RX8025的时、分、秒、年、月、日以及星期。而且库内拥有<font color="red"> 阳历 转 农历  </font> 的 函数 (** ***仅支持1900年-2099年*** **)**
 
 ## 2.2 库下载地址
-&emsp;[RX8025 for Arduino : https://github.com/MR-XieXuan/RX8025_for_Arduino](https://github.com/MR-XieXuan/RX8025_for_Arduino)
+&emsp;[RX8025 for Arduino : https://github.com/MR-XieXuan/RX8025_for_Arduino](https://github.com/MR-XieXuan/RX8025_for_Arduino) <br/>
 &emsp;<font color="red"> 如果下载或者安装遇到困难，欢迎在评论区留言寻求大家的帮助，或者给作者发私信。作者的联系方式将放在文章底部。谢谢！ </font>
 ***
 # 3 库的使用
