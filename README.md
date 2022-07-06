@@ -1,10 +1,5 @@
 # RX8025_for_Arduino
 RX8025芯片在Arduino下的驱动库
-<style>
-hr:nth-of-type(4) {
-  border-image: linear-gradient(to right, #F00, #0F0 20%, #00F 80%, #000) 1 !important;
-}
-</style>
 # 1  RX8025 
 rx8025是一个拥有I2C接口和温度补偿功能的新型实时时钟芯片。芯片可以将时间发送给rx8025。该芯片能被用来设定和读取年，月，日，星期，时，分，秒 时间信息。年份为后两位数字表示， 任何可以被4 整除的年份被当成闰年处理。（2000 年到2099 年)。
 *** 
