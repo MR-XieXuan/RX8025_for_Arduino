@@ -68,6 +68,7 @@ protected:
 };
 
 //判断年份是否是闰年
+//Determine whether the year is a leap year
 bool isleapYear(const uint8_t);
 
 class RX8025

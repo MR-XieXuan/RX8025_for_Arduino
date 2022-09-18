@@ -1,24 +1,23 @@
 #include "RX8025.h"
-// These included for the DateTime class inclusion; will try to find a way to
-// not need them in the future...
 #if defined(__AVR__)
 #include <avr/pgmspace.h>
 #elif defined(ESP8266)
 #include <pgmspace.h>
 #endif
-// Changed the following to work on 1.0
-//#include "WProgram.h"
 #include <Arduino.h>
 
 // 8025I2C地址
 #define RX8025_address 0x32
 // 日期起始时间(这里为啥要减掉八个小时,因为用的日期所在时区和国内时区相差8小时,所以需要减掉八小时的时区时间)
+// Date start time (why subtract 8 hours here, because the time zone of the date is 8 hours away from the domestic time zone, so subtract 8 hours from the time zone)
+// If you are not a Chinese , change "(8*60*60)" to your country time difference 
 #define SECONDS_FROM_1970_TO_2000 946684800 - (8 * 60 * 60)
 //
 static const uint8_t daysInMonth[] PROGMEM = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 /**
    自2000/01/01起的天数，2001年有效。。2099
+   Number of days since 2000/01/01, valid in 2001. 2099
 */
 static uint16_t date2days(uint16_t y, uint8_t m, uint8_t d)
 {
